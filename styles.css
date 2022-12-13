@@ -23,14 +23,27 @@ nav {
   min-height: 120px;
 }
 
+.barvis {
+  color: #BA0B0B;
+}
+.barvis :hover {
+  color: #00DBA8;
+}
+
 .logo {
-  max-width: 80%;
+  max-width: 70%;
   padding: 1%;
 }
 
 @media (min-width: 992px) {
   .logo {
     max-width: 33%;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 [class*=col-] {
