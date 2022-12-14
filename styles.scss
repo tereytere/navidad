@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Gayathri';
+    color: #4A0404;
 }
 
 main {
@@ -15,6 +16,8 @@ main {
 nav {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: nowrap !important;
 }
 
 .barra {
@@ -30,7 +33,7 @@ nav {
 }
 
 .logo {
-    width: 100%;
+    max-width: 100%;
 }
 
 @media (min-width: 992px) {
