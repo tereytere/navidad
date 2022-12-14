@@ -36,6 +36,68 @@ nav {
     max-width: 100%;
 }
 
+footer {
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+    
+    .bloquefooter {
+        padding-top: 5%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .socialmedia {
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: normal;
+        flex: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    
+    .fa-brands {
+        padding-top: 25%;
+    }
+    
+    .button1 {
+        border: none;
+        background-color: #6c4166;
+        width: 3rem;
+        height: 3rem;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border-radius: 50%;
+        justify-content: space-between;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .foot-copy {
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex!important;
