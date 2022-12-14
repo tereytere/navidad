@@ -30,12 +30,11 @@ nav {
 }
 
 .logo {
-    max-width: 70%;
     padding: 1%;
+    width: 100%;
 }
 
 @media (min-width: 992px) {
-    .logo {max-width: 33%}
     .navbar-expand-lg .navbar-collapse {
         display: flex!important;
         flex-basis: auto;
