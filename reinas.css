@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Gayathri&display=swap");
+body {
+  font-family: "Gayathri";
+  color: white;
+  background-color: #063E3A;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+
+.barra {
+  padding: 0;
+  margin: 0;
+  background: url(images/nieveTop.png) repeat-x left top #05322F;
+  min-height: 120px;
+}
+
+.barvis {
+  color: #BA0B0B;
+}
+.barvis :hover {
+  color: #00DBA8;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+  margin: 10% 5%;
+}
+
+.container-1 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container-1 h2:hover {
+  color: #FFCA2B;
+}
+
+.container-1 p {
+  margin: 0 5%;
+  text-align: center;
+}
+
+.elige {
+  background-color: #700707;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 20px;
+  color: white;
+  align-items: center;
+  margin-left: 1%;
+}
+
+.elige:hover {
+  background: #FFCA2B;
+  color: white;
+}
+
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer {
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+.bloquefooter {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.socialmedia {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: normal;
+  flex: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.fa-brands {
+  padding-top: 25%;
+}
+
+.button1 {
+  border: none;
+  background-color: #6c4166;
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: space-between;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.foot-copy {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=reinas.css.map */
