@@ -1,67 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Gayathri&display=swap");
-nav {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: nowrap !important;
-}
-
-.barra {
-  padding: 0;
-  margin: 0;
-  background: url(images/nieve-top.svg) repeat-x left top #05322F;
-  min-height: 120px;
-}
-
-body {
-  font-family: "Gayathri";
-  color: #4A0404;
-}
-
-main {
-  background-image: url(images/tree.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0;
-  margin: 0;
-}
-
-.barvis {
-  color: #BA0B0B;
-}
-.barvis :hover {
-  color: #00DBA8;
-}
-
-.logo {
-  max-width: 100%;
-}
-
-/*Nieve*/
-#container {
-  background: #666 url(images/tree.png) no-repeat;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background-size: cover;
-}
-
-nav {
-  background: url(images/nieverepeat.png) repeat-x left top;
-  min-height: 300px;
-}
-
-nav ul li {
-  display: inline;
-  text-decoration: none;
-}
-
 @-webkit-keyframes nieve {
   from {
-    top: -10px;
+    top: 0%;
   }
   to {
-    top: 450px;
+    top: 100%;
   }
 }
 @-webkit-keyframes copos {
@@ -74,11 +17,11 @@ nav ul li {
 }
 #snow div {
   position: absolute;
-  top: -40px;
   -webkit-animation-name: nieve, copos;
-  -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: normal;
-  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  top: -40px;
 }
 
 .copos {
@@ -88,35 +31,220 @@ nav ul li {
 }
 
 .copos.f1 {
-  left: 40px;
-  -webkit-animation-duration: 5s;
+  left: 5%;
+  -webkit-animation-delay: -2s;
 }
 
 .copos.f2 {
   font-size: 1.8em;
-  left: 120px;
-  -webkit-animation-duration: 7s;
+  left: 12%;
+  -webkit-animation-delay: 2s;
 }
 
 .copos.f3 {
-  left: 200px;
-  -webkit-animation-duration: 8s;
+  left: 25%;
+  -webkit-animation-delay: -8s;
 }
 
 .copos.f4 {
   font-size: 1.5em;
-  left: 280px;
-  -webkit-animation-duration: 6s;
+  left: 32%;
+  -webkit-animation-delay: -3s;
 }
 
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+.copos.f5 {
+  left: 18%;
+  -webkit-animation-delay: -5s;
 }
+
+.copos.f6 {
+  font-size: 1.8em;
+  left: 48%;
+}
+
+.copos.f7 {
+  left: 33%;
+  -webkit-animation-delay: 1s;
+}
+
+.copos.f8 {
+  font-size: 2em;
+  left: 55%;
+  -webkit-animation-delay: 6s;
+}
+
+.copos.f9 {
+  left: 40%;
+  -webkit-animation-delay: -2s;
+}
+
+.copos.f10 {
+  font-size: 1.8em;
+  left: 50%;
+  -webkit-animation-delay: -3s;
+}
+
+.copos.f11 {
+  left: 60%;
+  -webkit-animation-delay: 4s;
+}
+
+.copos.f12 {
+  font-size: 1.5em;
+  left: 75%;
+  -webkit-animation-delay: -6s;
+}
+
+.copos.f13 {
+  left: 80%;
+  -webkit-animation-delay: 3s;
+}
+
+.copos.f14 {
+  font-size: 1.8em;
+  left: 92%;
+  -webkit-animation-delay: -7s;
+}
+
+.copos.f15 {
+  left: 64%;
+}
+
+.copos.f16 {
+  font-size: 1.5em;
+  left: 88%;
+  -webkit-animation-delay: 6s;
+}
+
+.copos.f17 {
+  left: 53%;
+  -webkit-animation-delay: 2s;
+}
+
+.copos.f18 {
+  font-size: 2em;
+  left: 71%;
+  -webkit-animation-delay: 7s;
+}
+
+.copos.f19 {
+  left: 83%;
+  -webkit-animation-delay: -1s;
+}
+
+.copos.f20 {
+  font-size: 1.5em;
+  left: 95%;
+  -webkit-animation-delay: 6s;
+}
+
+body {
+  font-family: "Gayathri";
+  color: white;
+  margin: 0;
+  padding: 0;
+  --bs-nav-link-color: #4A0404;
+  --bs-link-color: #4A0404;
+  --bs-nav-link-hover-color: #00DBA8;
+  --bs-link-hover-color: #00DBA8;
+}
+
+main {
+  background-color: #06403C;
+  padding: 0;
+  margin: 0 !important;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+
+.barra {
+  padding: 0;
+  margin: 0;
+  background: url(images/nieve-top.svg) repeat-x left top white;
+  min-height: 117px;
+}
+
+.barvis {
+  color: #BA0B0B;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.navli {
+  align-self: center;
+}
+
+footer {
+  background: url(images/nieve-bottom.svg) repeat-x left top white;
+  min-height: 117px;
+  justify-content: space-between;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  padding: 5% 0 0 0;
+  align-items: center;
+  align-content: center;
+  overflow-x: hidden;
+}
+
+.bloquefooter {
+  margin: 5% 0;
+  padding: 0 5%;
+}
+
+.socialmedia {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: normal;
+  flex: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.fa-brands {
+  padding-top: 25%;
+}
+
+.button1 {
+  border: none;
+  background-color: #06403C;
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  justify-content: space-between;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.foot-copy {
+  color: #06403C;
+  padding: 5% 0 0 0;
+  margin: 0;
+  list-style: none;
+}
+
+.foot.links {
+  list-style: none;
+  padding: 0 !important;
+}
+
 [class*=col-] {
   width: 100%;
 }
@@ -159,4 +287,16 @@ nav ul li {
   .col-12 {
     width: 100%;
   }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+a:hover {
+  color: #00DBA8 !important;
+  cursor: url(images/raton.svg), auto !important;
 }/*# sourceMappingURL=talleres.css.map */
