@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&display=swap');
+
+nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap !important;
+}
+
+.barra {
+    padding: 0;
+    margin: 0;
+    background: url(images/nieveTop.png) repeat-x left top #05322F;
+    min-height: 120px;
+}
+
+body {
+    font-family: 'Gayathri';
+    color: #4A0404;
+}
+
+main {
+    background-image: url(images/tree.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.barvis {
+    color: #BA0B0B;
+    :hover {color: #00DBA8;}
+}
+
+.logo {
+    max-width: 100%;
+}
+
+/*Nieve*/
+#container{      
+    background: #666 url( images/tree.png) no-repeat;
+    width: 100%;
+    height: 100%;      
+    position: relative; 
+    background-size: cover;  
+ }
+ nav{ background: url(images/nieverepeat.png) repeat-x left top;
+    min-height: 300px;}
+    nav ul li{ display: inline; text-decoration: none;}
+
+@-webkit-keyframes nieve{
+    from {top: -10px;}
+    to {top: 450px;}
+ }
+       
+ @-webkit-keyframes copos{
+     0% { -webkit-transform: rotate(-180deg) translate(0px, 0px);}
+     100% { -webkit-transform: rotate(180deg) translate(10px, 75px);}
+ }
+#snow div {
+    position: absolute;
+    top: -40px;
+    -webkit-animation-name: nieve, copos;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: ease-in;
+ }
+ .copos {
+    color: #fff;
+    font-size: 1em;
+    position: absolute;   
+ }
+ .copos.f1 {
+    left: 40px;
+    -webkit-animation-duration: 5s;   
+ }
+ .copos.f2 {
+    font-size: 1.8em;
+    left: 120px;
+    -webkit-animation-duration: 7s;   
+ }
+ .copos.f3 {
+    left: 200px;
+    -webkit-animation-duration: 8s;   
+ }
+ .copos.f4 {
+    font-size: 1.5em;
+    left: 280px;
+    -webkit-animation-duration: 6s;   
+ }
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
