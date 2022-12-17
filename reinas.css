@@ -38,6 +38,14 @@ img {
   margin: 10% 5%;
 }
 
+img.ornament {
+  margin: 3%;
+}
+
+a.elige {
+  margin: 5%;
+}
+
 .container-1 {
   display: flex;
   flex-wrap: wrap;
@@ -199,4 +207,21 @@ footer {
   color: white;
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .cartas-texto {
+    display: inline-flex;
+  }
+  .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 50%;
+  }
 }/*# sourceMappingURL=reinas.css.map */

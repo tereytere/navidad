@@ -44,9 +44,12 @@ img {
     margin: 10% 5%;
 }
 //ornamento 
-// .ornamento {
-
-// }
+img.ornament {
+    margin: 3%;
+}
+a.elige {
+    margin: 5%;
+}
 
 //primer texto
 .container-1 {
@@ -216,14 +219,24 @@ footer {
         margin: 0;
     }
     
-// @media (min-width:1200px) {
-//     .cartas-texto {
-//         display: inline-flex;
-       
+@media (min-width:1200px) {
+    .cartas-texto {
+        display: inline-flex;
+    } 
+    .container-1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
 
-//         }  
+    img { max-width: 50%;
+
+    }    
         
-// }
+}
 
 // @media (min-width: 600px) {
 //     /* For desktop: */
