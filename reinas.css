@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gayathri&display=swap");
 body {
   font-family: "Gayathri";
-  color: white;
+  color: #fff;
   background-color: #063E3A;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ img {
 }
 
 .container-1 {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
@@ -49,6 +49,7 @@ img {
 
 .container-1 h2:hover {
   color: #FFCA2B;
+  align-self: auto;
 }
 
 .container-1 p {
@@ -60,22 +61,83 @@ img {
   background-color: #700707;
   border-radius: 10px;
   text-decoration: none;
-  margin-top: 30px;
-  padding: 20px;
-  color: white;
+  padding: 10px;
+  color: #fff;
   align-items: center;
   margin-left: 1%;
+  width: 50%;
+  text-align: center;
 }
 
 .elige:hover {
   background: #FFCA2B;
-  color: white;
+  color: #fff;
 }
 
 .container-2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.container-2 h2 {
+  margin: 5% 5%;
+  text-align: center;
+}
+
+.container-2 h2:hover {
+  color: #FFCA2B;
+  align-self: auto;
+}
+
+.container-2 li {
+  list-style: none;
+  margin-bottom: 5%;
+}
+
+.container-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.container-3 h2 {
+  margin: 5% 5%;
+  text-align: center;
+}
+
+.container-3 h2:hover {
+  color: #FFCA2B;
+  align-self: auto;
+}
+
+.cartas {
+  border-radius: 50%;
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.btn-secondary {
+  border: #BA0B0B;
+  background-color: #700707;
+  font-size: large;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background-color: #FFCA2B !important;
+  align-self: auto;
 }
 
 footer {
@@ -137,52 +199,4 @@ footer {
   color: white;
   padding: 0;
   margin: 0;
-}
-
-@media (min-width: 600px) {
-  /* For desktop: */
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    align-items: center;
-    justify-content: space-evenly;
-  }
 }/*# sourceMappingURL=reinas.css.map */
