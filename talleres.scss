@@ -225,6 +225,75 @@ footer {
     width: 100%;
 }
 
+/*talleres*/
+
+@charset "utf-8";
+.tarjetas-container {
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap: 16px;
+    padding: 60px;
+
+    .tarjeta {
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      width: 400px;
+      background-color: #5F9C7A;
+      padding:none;
+      margin-inline: 25px;
+      margin-bottom: 60px;
+      border: 1px solid lightgray;
+      box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+      border-radius:10px;
+      font-family: sans-serif;
+      text-align: center;
+
+      img {
+        border: 3px solid;
+        border-color: #4A0404;
+      }
+    }
+
+    .titulo {
+        font-size: 24px;
+        padding: 10px 10px 0 10px;
+    }
+    .cuerpo {
+        padding: 10px;
+        flex: 1 1 100%;
+
+        img .roscon {
+            border-width: 10%;
+            border-color: #4A0404;
+        }
+    }
+
+    .pie {
+        background: #BA0B0B;
+        border-radius:0 0 10px 10px;
+        padding: 10px;
+        text-align:center; 
+    
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            content: ""
+        }
+    }
+}
+
+
+
 @media (min-width: 600px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
