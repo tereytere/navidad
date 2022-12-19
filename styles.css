@@ -26,7 +26,7 @@
 
 .copos {
   color: #fff;
-  font-size: 1em;
+  font-size: 1rem;
   position: absolute;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .copos.f2 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   left: 12%;
   -webkit-animation-delay: 2s;
 }
@@ -47,7 +47,7 @@
 }
 
 .copos.f4 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   left: 32%;
   -webkit-animation-delay: -3s;
 }
@@ -58,7 +58,7 @@
 }
 
 .copos.f6 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   left: 48%;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .copos.f8 {
-  font-size: 2em;
+  font-size: 2rem;
   left: 55%;
   -webkit-animation-delay: 6s;
 }
@@ -79,7 +79,7 @@
 }
 
 .copos.f10 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   left: 50%;
   -webkit-animation-delay: -3s;
 }
@@ -90,7 +90,7 @@
 }
 
 .copos.f12 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   left: 75%;
   -webkit-animation-delay: -6s;
 }
@@ -101,7 +101,7 @@
 }
 
 .copos.f14 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   left: 92%;
   -webkit-animation-delay: -7s;
 }
@@ -111,7 +111,7 @@
 }
 
 .copos.f16 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   left: 88%;
   -webkit-animation-delay: 6s;
 }
@@ -122,7 +122,7 @@
 }
 
 .copos.f18 {
-  font-size: 2em;
+  font-size: 2rem;
   left: 71%;
   -webkit-animation-delay: 7s;
 }
@@ -133,7 +133,7 @@
 }
 
 .copos.f20 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   left: 95%;
   -webkit-animation-delay: 6s;
 }
@@ -147,6 +147,7 @@ body {
   --bs-link-color: #4A0404;
   --bs-nav-link-hover-color: #00DBA8;
   --bs-link-hover-color: #00DBA8;
+  overflow-x: hidden !important;
 }
 
 main {
@@ -165,7 +166,7 @@ nav {
 .barra {
   padding: 0;
   margin: 0;
-  background: url(images/nieve-top.svg) repeat-x left top white;
+  background: url(images/nieve-top.svg) repeat-x left bottom white;
   min-height: 117px;
 }
 
@@ -294,6 +295,42 @@ footer {
     flex-basis: auto;
     align-items: center;
     justify-content: space-evenly;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
   }
 }
 a:hover {
