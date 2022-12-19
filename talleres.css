@@ -250,6 +250,10 @@ footer {
 }
 
 /*talleres*/
+.talleres {
+  padding-top: 5%;
+}
+
 .titulo-seccion {
   display: flex;
   justify-content: center;
@@ -298,6 +302,9 @@ footer {
   border-width: 10%;
   border-color: #4A0404;
 }
+.tarjetas-container .cuerpo .descripcion {
+  margin: 5%;
+}
 .tarjetas-container .pie {
   background: linear-gradient(to bottom right, #BA0B0B, #4A0404);
   border-radius: 0 0 10px 10px;
@@ -307,15 +314,6 @@ footer {
 .tarjetas-container .pie a {
   text-decoration: none;
   color: white;
-}
-.tarjetas-container .pie a:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  content: "";
 }
 
 .novedad {
