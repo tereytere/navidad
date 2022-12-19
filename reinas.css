@@ -24,7 +24,7 @@ nav {
 .barvis {
   color: #BA0B0B;
 }
-.barvis :hover {
+.barvis:hover {
   color: #00DBA8;
 }
 
@@ -56,7 +56,7 @@ a.elige {
 }
 
 .container-1 h2:hover {
-  color: #FFCA2B;
+  color: #d3aa2f;
   align-self: auto;
 }
 
@@ -75,11 +75,13 @@ a.elige {
   margin-left: 1%;
   width: 50%;
   text-align: center;
+  background: linear-gradient(to bottom right, rgb(122, 39, 39), #612114, rgb(75, 16, 12), rgb(54, 2, 2));
+  border: 1px solid #BA0B0B;
 }
-
 .elige:hover {
-  background: #FFCA2B;
+  background: #d3aa2f;
   color: #fff;
+  border: 0px;
 }
 
 .container-2 {
@@ -97,13 +99,17 @@ a.elige {
 }
 
 .container-2 h2:hover {
-  color: #FFCA2B;
+  color: #d3aa2f;
   align-self: auto;
+}
+
+ol.col3 {
+  padding-right: 40px;
 }
 
 .container-2 li {
   list-style: none;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .container-3 {
@@ -121,7 +127,7 @@ a.elige {
 }
 
 .container-3 h2:hover {
-  color: #FFCA2B;
+  color: #d3aa2f;
   align-self: auto;
 }
 
@@ -136,82 +142,61 @@ a.elige {
   align-items: center;
 }
 
-.btn-secondary {
-  border: #BA0B0B;
+img.cartas {
+  border: 5px solid rgb(195, 10, 10);
+  box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.8196078431);
+}
+img.cartas:hover {
+  box-shadow: 2px 2px 8px 4px rgba(143, 250, 137, 0.8196078431);
+}
+
+.boton-ver {
   background-color: #700707;
-  font-size: large;
-  text-align: center;
-}
-
-.btn-secondary:hover {
-  background-color: #FFCA2B !important;
-  align-self: auto;
-}
-
-footer {
-  background-image: url("https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_1280.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: space-between;
-  display: block;
-  text-align: center;
-  margin-top: 0;
-  width: 100%;
-  align-items: center;
-  align-content: center;
-}
-
-.bloquefooter {
-  padding-top: 5%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.socialmedia {
-  list-style: none;
+  border-radius: 10px;
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: normal;
-  flex: auto;
-  padding: 0;
-  margin: 0;
-  display: flex;
+  padding: 5px;
+  color: #fff;
   align-items: center;
-  align-content: center;
+  width: 25%;
   text-align: center;
-  justify-content: space-between;
+  background: linear-gradient(to bottom right, rgb(122, 39, 39), #612114, rgb(75, 16, 12), rgb(54, 2, 2));
+  border: 1px solid #BA0B0B;
+  font-size: 1em;
+}
+.boton-ver:hover {
+  background: #d3aa2f;
+  color: #fff;
+  border: 0px;
 }
 
-.fa-brands {
-  padding-top: 25%;
+@media (min-width: 800px) {
+  ol.col3 {
+    padding-right: 0px;
+    padding-left: 0px;
+    float: left;
+    padding-bottom: 0px;
+    margin: 15px 0px;
+    width: 100%;
+    padding-top: 0px;
+    list-style: none;
+  }
+  ol.col3 li {
+    padding-right: 2px;
+    display: inline;
+    padding-left: 50px;
+    float: left;
+    padding-bottom: 2px;
+    width: 30%;
+    padding-top: 2px;
+    font-size: 1.2em;
+  }
 }
-
-.button1 {
-  border: none;
-  background-color: #6c4166;
-  width: 3rem;
-  height: 3rem;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 50%;
-  justify-content: space-between;
-  display: inline-block;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-}
-
-.foot-copy {
-  color: white;
-  padding: 0;
-  margin: 0;
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .cartas-texto {
     display: inline-flex;
+  }
+  .carta-principal {
+    max-width: 40%;
   }
   .container-1 {
     display: flex;
@@ -219,9 +204,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-right: 50px;
   }
-  img {
-    max-width: 50%;
+  .container-1 p {
+    font-size: 1.1em;
+  }
+  img.cartas:hover {
+    box-shadow: 2px 2px 8px 4px rgba(143, 250, 137, 0.8196078431);
   }
 }/*# sourceMappingURL=reinas.css.map */

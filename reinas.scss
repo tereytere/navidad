@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gayathri&display=swap');
 
+// #FFCA2B
+
 //Variables
 $color-botones: #700707;
 $color-letras: #fff;
 $color-fondo: #063E3A;
-$color-hover: #FFCA2B;
+$color-hover: #d3aa2f;
     
 body {
     font-family: 'Gayathri';
@@ -30,7 +32,7 @@ nav {
 
 .barvis {
     color: #BA0B0B;
-    :hover {color: #00DBA8;}
+    &:hover {color: #00DBA8;}
 }
 
 .logo {
@@ -82,11 +84,16 @@ a.elige {
     margin-left: 1%;
     width: 50%;
     text-align: center;
+    background: linear-gradient(to bottom right, rgb(122, 39, 39),#612114, rgb(75, 16, 12), rgb(54, 2, 2) );
+    border: 1px solid #BA0B0B;
+
+    &:hover {
+        background: $color-hover;
+        color: $color-letras;
+        border: 0px;
+        }
 }
-.elige:hover {
-    background: $color-hover;
-    color: $color-letras;
-}
+
 //seccion 2 
 
 .container-2 {
@@ -96,6 +103,16 @@ a.elige {
     flex-wrap: wrap;
     margin: 0 auto;
     flex-direction: column;
+    // &__h2 {
+    //     margin: 5% 5%;
+    //     text-align: center;
+    //     &__h2:hover{
+    //         color: $color-hover;
+    //         align-self: auto;
+    //     }
+    // }
+ //he provado esto de arriba pero por alguna razon no me funciona
+    
 }
 .container-2 h2 {
     margin: 5% 5%;
@@ -106,12 +123,16 @@ a.elige {
     align-self: auto;
 }
 
-.container-2 li {
-    list-style: none;
-    margin-bottom: 5%;
+ol.col3 {
+    padding-right: 40px;
 }
 
-//ultima parte de la pagina
+.container-2 li {
+    list-style: none;
+    margin-bottom: 10%;
+}
+
+//seccion 3 ultima pantalla fotos redondas
 
 .container-3 {
     display: flex;
@@ -132,7 +153,8 @@ a.elige {
     align-self: auto;
 }
 
-//cartas
+
+//cartas redondas
 
 .cartas {
     border-radius: 50%;
@@ -144,99 +166,152 @@ a.elige {
     flex-wrap: nowrap;
     align-items: center;
 }
+img.cartas {
+    border: 5px solid rgb(195, 10, 10);
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+
+    &:hover {
+        box-shadow: 2px 2px 8px 4px #8ffa89d1;
+    }
+
+}
+
 //botones ver
-
-.btn-secondary {
-    border:#BA0B0B;
+.boton-ver {
     background-color: $color-botones;
-    font-size:large;
-    text-align: center;
-}
-
-.btn-secondary:hover {
-    background-color: $color-hover !important;
-    align-self: auto;
-}
-
-footer {
-    background-image: url("https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_1280.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: space-between;
-    display: block;
-    text-align: center;
-    margin-top: 0;
-    width: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+    color: $color-letras;
     align-items: center;
-    align-content: center;
+    width: 25%;
+    text-align: center;
+    background: linear-gradient(to bottom right, rgb(122, 39, 39),#612114, rgb(75, 16, 12), rgb(54, 2, 2) );
+    border: 1px solid #BA0B0B;
+    font-size: 1em;
+
+    &:hover {
+        background: $color-hover;
+        color: $color-letras;
+        border: 0px;
+        }
+}
+
+// footer {
+//     background-image: url("https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_1280.jpg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     justify-content: space-between;
+//     display: block;
+//     text-align: center;
+//     margin-top: 0;
+//     width: 100%;
+//     align-items: center;
+//     align-content: center;
+// }
+    
+//     .bloquefooter {
+//         padding-top: 5%;
+//         padding-bottom: 2%;
+//         padding-left: 5%;
+//         padding-right: 5%;
+//     }
+    
+//     .socialmedia {
+//         list-style: none;
+//         text-decoration: none;
+//         font-size: 1.5rem;
+//         font-weight: normal;
+//         flex: auto;
+//         padding: 0;
+//         margin: 0;
+//         display: flex;
+//         align-items: center;
+//         align-content: center;
+//         text-align: center;
+//         justify-content: space-between;
+//     }
+    
+//     .fa-brands {
+//         padding-top: 25%;
+//     }
+    
+//     .button1 {
+//         border: none;
+//         background-color: #6c4166;
+//         width: 3rem;
+//         height: 3rem;
+//         color: white;
+//         font-size: 1.5rem;
+//         cursor: pointer;
+//         border-radius: 50%;
+//         justify-content: space-between;
+//         display: inline-block;
+//         text-align: center;
+//         align-items: center;
+//         align-content: center;
+//     }
+    
+//     .foot-copy {
+//         color: white;
+//         padding: 0;
+//         margin: 0;
+//     }
+
+@media (min-width:800px) {
+    //lista informativa sobre las cartas
+    ol.col3 {
+        padding-right: 0px;
+        padding-left: 0px;
+        float: left;
+        padding-bottom: 0px;
+        margin: 15px 0px;
+        width: 100%;
+        padding-top: 0px;
+        list-style:none;
+    }
+    ol.col3 li {
+        padding-right: 2px;
+        display: inline;
+        padding-left: 50px;
+        float: left;
+        padding-bottom: 2px;
+        width: 30%;
+        padding-top: 2px;
+        font-size: 1.2em;
+        }
 }
     
-    .bloquefooter {
-        padding-top: 5%;
-        padding-bottom: 2%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    
-    .socialmedia {
-        list-style: none;
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-weight: normal;
-        flex: auto;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        justify-content: space-between;
-    }
-    
-    .fa-brands {
-        padding-top: 25%;
-    }
-    
-    .button1 {
-        border: none;
-        background-color: #6c4166;
-        width: 3rem;
-        height: 3rem;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        border-radius: 50%;
-        justify-content: space-between;
-        display: inline-block;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-    
-    .foot-copy {
-        color: white;
-        padding: 0;
-        margin: 0;
-    }
-    
-@media (min-width:1200px) {
+@media (min-width:1000px) {
     .cartas-texto {
         display: inline-flex;
     } 
+
+    //foto primera pantalla
+    .carta-principal { 
+        max-width: 40%;
+    } 
+
     .container-1 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        margin-right: 50px;
+    }
+    //parrafo de primera pantalla
+    .container-1 p {
+        font-size: 1.1em;
     }
 
-    img { max-width: 50%;
-
-    }    
-        
+    //seccion 3 cartas redonditas
+    img.cartas:hover {
+        box-shadow: 2px 2px 8px 4px #8ffa89d1;
+    }
 }
+        
+
 
 // @media (min-width: 600px) {
 //     /* For desktop: */
@@ -262,3 +337,6 @@ footer {
 //         justify-content: space-evenly;
 //     }
 // }
+
+
+

@@ -47,7 +47,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <img src="../navidad/images/reno.svg" width="40px" alt="reno"></a>
+                <img src="images/reno.svg" width="40px" alt="reno"></a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="../">Mi cuenta</a></li>
               </ul>
@@ -55,7 +55,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <img src="../navidad/images/carrito.png" width="40px" alt="carrito"></a>
+                <img src="images/carrito.png" width="40px" alt="carrito"></a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="../">Mi carrito</a></li>
               </ul>
@@ -67,7 +67,7 @@
   </header>
   <main>
     <div class="cartas-texto">
-        <img src="images/cartas-primeras.png" alt="cartas">  
+      <img class="carta-principal" src="images/CartasReinasM.png" alt="cartas">
       <div class="container-1">
         <h2>Cartas a las Reinas Magas</h2>
         <img class="ornament" src="/images/adorno_up.png" alt="ornamento">
@@ -77,47 +77,48 @@
 
           Al pedir tu carta, los Reyes Magos donarán y enviarán otras cartas a peques que hoy se encuentran
           hospitalizados, a través de 20 organizaciones de toda España.</p>
-          <img class="ornament" src="/images/adorno_down.png" alt="ornamento">
-          <a href="#" class="elige">Elige tu plantilla</a>
+        <img class="ornament" src="/images/adorno_down.png" alt="ornamento">
+        <a href="#cartas" class="elige">Elige tu plantilla</a>
       </div>
     </div>
 
     <hr class="divisores">
     <div class="container-2">
       <h2>¿Qué incluye tu carta?</h2>
-      <ol>
-        <li><strong>Personalizada</strong>
-          <br>
-          Cada carta es completamente personalizable con el nombre de tu hij@, su edad, su ciudad y el nombre de su
-          mejor amigo o familiar.
-        </li>
-        <li><strong>Historias Originales</strong>
-          <br>
-          Puedes elegir entre varias historias originales donde los Reyes Magos le cuentan las últimas novedades del
-          Lejano Oriente.
-        </li>
-        <li><strong>Modelos diferentes</strong>
-          <br>
-          Hay 6 modelos de carta con historias distintas si quieres que los Reyes Magos le escriban a más de un niño/a
-          en la misma casa. Uno de ellos es 100% libre.
-        </li>
-        <li><strong>Diseño mágico</strong>
-          <br>
-          Cada carta está impresa en el auténtico papel del Palacio de Oriente. Cuenta con un diseño original precioso
-          de estilo árabe. Además, vienen firmadas de su puño y letra por parte de las Reinas Magas
-        </li>
-        <li><strong>Nivel de detalles</strong>
-          <br>
-          La carta viene en un sobre lacrado con la insignia de los Reyes Magos y su lema escrito en árabe “Guardianes
-          de la magia viva”. Además, viene con el nombre de cada niño y niña, manuscrito en pluma con tinta dorada.
-        </li>
-        <li><strong>100% Auténtica</strong>
-          <br>
-          Al ser la auténtica carta de los Reyes Magos, cuenta con el escudo heráldico oficial de la Casa Real y su
-          remite. Además, cuenta con el sello postal y el matasellos original de la Oficina de Correos del Lejano
-          Oriente.
-        </li>
-      </ol>
+      <div>
+        <ol class="col3">
+          <li><strong>Personalizada</strong><br><br>
+           
+            Cada carta es completamente personalizable con el nombre de tu hij@, su edad, su ciudad y el nombre de su
+            mejor amigo o familiar.
+          </li>
+          <li><strong>Historias Originales</strong><br><br>
+            
+            Puedes elegir entre varias historias originales donde los Reyes Magos le cuentan las últimas novedades del
+            Lejano Oriente.
+          </li>
+          <li><strong>Modelos diferentes</strong><br><br>
+            
+            Hay 6 modelos de carta con historias distintas si quieres que los Reyes Magos le escriban a más de un niño/a
+            en la misma casa. Uno de ellos es 100% libre.
+          </li>
+          <li><strong>Diseño mágico</strong><br><br>
+          
+            Cada carta está impresa en el auténtico papel del Palacio de Oriente. Cuenta con un diseño original precioso
+            de estilo árabe. Además, vienen firmadas de su puño y letra por parte de las Reinas Magas
+          </li>
+          <li><strong>Nivel de detalles</strong><br><br>
+            
+            La carta viene en un sobre lacrado con la insignia de los Reyes Magos y su lema escrito en árabe “Guardianes
+            de la magia viva”. Además, viene con el nombre de cada niño y niña, manuscrito en pluma con tinta dorada.
+          </li>
+          <li><strong>100% Auténtica</strong><br><br>
+            Al ser la auténtica carta de los Reyes Magos, cuenta con el escudo heráldico oficial de la Casa Real y su
+            remite. Además, cuenta con el sello postal y el matasellos original de la Oficina de Correos del Lejano
+            Oriente.
+          </li>
+        </ol>
+      </div>
     </div>
     <!--Carrusel-->
     <hr class="divisores">
@@ -131,23 +132,20 @@
           preserveaspectratio="xMidYMid slice" focusable="false">
         <rect width="100%" height="100%" fill="#777"></rect>
 
-        <p><a class="btn btn-secondary" style="background-color: #700707;" href="/images/carta1.jpg"
-            target="_blank">Ver</a></p>
+        <a class="boton-ver" href="/images/carta1.jpg" target="_blank">Ver</a>
       </div><!-- /.col-lg-4 -->
       <div class="col-md-4">
         <img class="cartas" src="/images/carta2.jpg" alt="carta" width="200" height="200"
           preserveaspectratio="xMidYMid slice" focusable="false">
 
-        <p><a class="btn btn-secondary" style="background-color: #700707;" href="/images/carta2.jpg"
-            target="_blank">Ver</a></p>
+        <a class="boton-ver" href="/images/carta2.jpg" target="_blank">Ver</a>
       </div><!-- /.col-lg-4 -->
       <div class="col-md-4">
 
         <img class="cartas" src="/images/carta32.jpg" alt="carta" width="200" height="200"
           preserveaspectratio="xMidYMid slice" focusable="false">
 
-        <p><a class="btn btn-secondary" style="background-color: #700707;" href="/images/carta3.jpg"
-            target="_blank">Ver</a></p>
+        <a class="boton-ver" href="/images/carta3.jpg" target="_blank">Ver</a>
       </div><!-- /.col-lg-4 -->
 
       <div class="col-md-4">
@@ -155,24 +153,21 @@
           preserveaspectratio="xMidYMid slice" focusable="false">
         <rect width="100%" height="100%" fill="#777"></rect>
 
-        <p><a class="btn btn-secondary" style="background-color: #700707;" href="/images/carta4.jpg"
-            target="_blank">Ver</a></p>
+        <a class="boton-ver" href="/images/carta4.jpg" target="_blank">Ver</a>
       </div><!-- /.col-lg-4 -->
       <div class="col-md-4">
         <img class="cartas" src="/images/carta52.jpg" alt="carta" width="200" height="200"
           preserveaspectratio="xMidYMid slice" focusable="false">
         <rect width="100%" height="100%" fill="#777"></rect>
 
-        <p><a class="btn btn-secondary" style="background-color: #700707;" href="/images/carta5.jpg"
-            target="_blank">Ver</a></p>
+        <a class="boton-ver" href="/images/carta5.jpg" target="_blank">Ver</a>
       </div><!-- /.col-lg-4 -->
       <div class="col-md-4">
         <img class="cartas" src="/images/carta62.jpg" alt="carta" width="200" height="200"
           preserveaspectratio="xMidYMid slice" focusable="false">
         <rect width="100%" height="100%" fill="#777"></rect>
 
-        <p><a class="btn btn-secondary" style="background-color: #700707;" href="/images/carta6.jpg"
-            target="_blank">Ver</a></p>
+        <a class="boton-ver" href="/images/carta6.jpg" target="_blank">Ver</a>
       </div><!-- /.col-lg-4 -->
     </div>
 
@@ -185,5 +180,3 @@
 </body>
 
 </html>
-
-
