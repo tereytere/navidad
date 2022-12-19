@@ -156,6 +156,62 @@ nav {
     align-self: center;
 }
 
+.contit {
+    margin: 0;
+    padding: 2% 1%;
+    text-align: center;
+}
+
+.conp {
+    margin: 0;
+    padding: 1%;
+}
+
+#contacto {
+    background-image: url("images/tree.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.escribenos {
+    text-align: center;
+    padding: 1%;
+}
+
+.cuentanos {
+    --bs-gutter-x: 0 !important;
+    padding: 1%;
+}
+
+.form-label, .form-check-input, .form-check-label, .valid-feedback, .invalid-feedback {
+    padding: 1%;
+}
+
+.concbut {
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.conbot {
+    box-sizing: border-box;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    left: 10px;
+    top: 20px;
+    background: linear-gradient(97.75deg, #BA0B0B -100.68%, #4A0404 124.1%);
+    border: 1px solid #BA0B0B;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 footer {
     background: url(images/nieve-bottom.svg) repeat-x left top white;
     min-height: 117px;
@@ -255,3 +311,6 @@ a:hover {
     cursor: url(images/raton.svg), auto !important;
 }
 
+html {
+    overflow-x: hidden !important;
+}
