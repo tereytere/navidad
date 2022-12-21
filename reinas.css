@@ -1,61 +1,227 @@
-#container{      
-    background: #666 url( images/tree.png) no-repeat;
-    width: 100%;
-    height: 100%;      
-    position: relative; 
-    background-size: cover;  
- }
- nav{ background: url(images/nieverepeat.png) repeat-x left top;
-    min-height: 300px;}
-    nav ul li{ display: inline; text-decoration: none;}
-
-@-webkit-keyframes nieve{
-    from {top: -10px;}
-    to {top: 450px;}
- }
-       
- @-webkit-keyframes copos{
-     0% { -webkit-transform: rotate(-180deg) translate(0px, 0px);}
-     100% { -webkit-transform: rotate(180deg) translate(10px, 75px);}
- }
-#snow div {
-    position: absolute;
-    top: -40px;
-    -webkit-animation-name: nieve, copos;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-    -webkit-animation-timing-function: ease-in;
- }
- .copos {
-    color: #fff;
-    font-size: 1em;
-    position: absolute;   
- }
- .copos.f1 {
-    left: 40px;
-    -webkit-animation-duration: 5s;   
- }
- .copos.f2 {
-    font-size: 1.8em;
-    left: 120px;
-    -webkit-animation-duration: 7s;   
- }
- .copos.f3 {
-    left: 200px;
-    -webkit-animation-duration: 8s;   
- }
- .copos.f4 {
-    font-size: 1.5em;
-    left: 280px;
-    -webkit-animation-duration: 6s;   
-
-
- }
-
-li {
-    margin-right: 15px;
+@import url("https://fonts.googleapis.com/css2?family=Gayathri&display=swap");
+body {
+  font-family: "Gayathri";
+  color: #fff;
+  background-color: #063E3A;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-li:hover{
-    margin-right: 15px;
-    color: rgb(213, 213, 101)
+
+nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap !important;
 }
+
+.barra {
+  padding: 0;
+  margin: 0;
+  background: url(images/nieveTop.png) repeat-x left top #05322F;
+  min-height: 120px;
+}
+
+.barvis {
+  color: #BA0B0B;
+}
+.barvis :hover {
+  color: #00DBA8;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+  margin: 10% 5%;
+}
+
+img.ornament {
+  margin: 3%;
+}
+
+a.elige {
+  margin: 5%;
+}
+
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container-1 h2:hover {
+  color: #FFCA2B;
+  align-self: auto;
+}
+
+.container-1 p {
+  margin: 0 5%;
+  text-align: center;
+}
+
+.elige {
+  background-color: #700707;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  align-items: center;
+  margin-left: 1%;
+  width: 50%;
+  text-align: center;
+}
+
+.elige:hover {
+  background: #FFCA2B;
+  color: #fff;
+}
+
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.container-2 h2 {
+  margin: 5% 5%;
+  text-align: center;
+}
+
+.container-2 h2:hover {
+  color: #FFCA2B;
+  align-self: auto;
+}
+
+.container-2 li {
+  list-style: none;
+  margin-bottom: 5%;
+}
+
+.container-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.container-3 h2 {
+  margin: 5% 5%;
+  text-align: center;
+}
+
+.container-3 h2:hover {
+  color: #FFCA2B;
+  align-self: auto;
+}
+
+.cartas {
+  border-radius: 50%;
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.btn-secondary {
+  border: #BA0B0B;
+  background-color: #700707;
+  font-size: large;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background-color: #FFCA2B !important;
+  align-self: auto;
+}
+
+footer {
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+.bloquefooter {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.socialmedia {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: normal;
+  flex: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.fa-brands {
+  padding-top: 25%;
+}
+
+.button1 {
+  border: none;
+  background-color: #6c4166;
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: space-between;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.foot-copy {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .cartas-texto {
+    display: inline-flex;
+  }
+  .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 50%;
+  }
+}/*# sourceMappingURL=reinas.css.map */
