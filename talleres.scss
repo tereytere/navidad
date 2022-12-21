@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&display=swap');
+
+@-webkit-keyframes nieve{
+    from {top: 0%;}
+    to {top: 100%;}
+}
+       
+@-webkit-keyframes copos{
+    0% { -webkit-transform: rotate(-180deg) translate(0px, 0px);}
+    100% { -webkit-transform: rotate(180deg) translate(10px, 75px);}
+}
+
+#snow div {
+    position: absolute;
+    -webkit-animation-name: nieve, copos;
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+	top: -40px;
+}
+    .copos {
+        color: #fff;
+        font-size: 1em;
+        position: absolute;   
+    }
+    .copos.f1 {
+        left: 5%;
+        -webkit-animation-delay: -2s;   
+    }
+    .copos.f2 {
+        font-size: 1.8em;
+        left: 12%;
+        -webkit-animation-delay: 2s;   
+    }
+    .copos.f3 {
+        left: 25%;
+        -webkit-animation-delay: -8s;   
+    }
+    .copos.f4 {
+        font-size: 1.5em;
+        left: 32%;
+        -webkit-animation-delay: -3s; 
+    }
+    .copos.f5 {
+        left: 18%;
+        -webkit-animation-delay: -5s; 
+    }
+    .copos.f6 {
+        font-size: 1.8em;
+        left: 48%;
+    }
+    .copos.f7 {
+        left: 33%;
+        -webkit-animation-delay: 1s;  
+    }
+    .copos.f8 {
+        font-size: 2em;
+        left: 55%;
+        -webkit-animation-delay: 6s;   
+    }
+    .copos.f9 {
+        left: 40%;
+        -webkit-animation-delay: -2s; 
+    }
+    .copos.f10 {
+        font-size: 1.8em;
+        left: 50%;
+        -webkit-animation-delay: -3s;  
+    }
+    .copos.f11 {
+        left: 60%;
+        -webkit-animation-delay: 4s;  
+    }
+    .copos.f12 {
+        font-size: 1.5em;
+        left: 75%;
+        -webkit-animation-delay: -6s;   
+    }
+    .copos.f13 {
+        left: 80%;
+        -webkit-animation-delay: 3s;   
+    }
+    .copos.f14 {
+        font-size: 1.8em;
+        left: 92%;
+        -webkit-animation-delay: -7s;   
+    }
+    .copos.f15 {
+        left: 64%;
+    }
+    .copos.f16 {
+        font-size: 1.5em;
+        left: 88%;
+        -webkit-animation-delay: 6s;   
+    }
+    .copos.f17 {
+        left: 53%;
+        -webkit-animation-delay: 2s;   
+    }
+    .copos.f18 {
+        font-size: 2em;
+        left: 71%;
+        -webkit-animation-delay: 7s;   
+    }
+    .copos.f19 {
+        left: 83%;
+        -webkit-animation-delay: -1s;   
+    }
+    .copos.f20 {
+        font-size: 1.5em;
+        left: 95%;
+        -webkit-animation-delay: 6s;   
+    }
+
+
+body {
+    font-family: 'Gayathri';
+    color: white;
+    margin: 0;
+    padding: 0;
+    --bs-nav-link-color: #4A0404;
+    --bs-link-color: #4A0404;
+    --bs-nav-link-hover-color: #00DBA8;
+    --bs-link-hover-color: #00DBA8;
+}
+
+main {
+    background-color: #06403C;
+    padding: 0;
+    margin: 0 !important;
+}
+
+nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap !important;
+}
+
+.barra {
+    padding: 0;
+    margin: 0;
+    background: url(images/nieve-top.svg) repeat-x left top white;
+    min-height: 117px;
+}
+
+.barvis {
+    color: #BA0B0B;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.navli {
+    align-self: center;
+}
+
+footer {
+    background: url(images/nieve-bottom.svg) repeat-x left top white;
+    min-height: 117px;
+    justify-content: space-between;
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    padding: 5% 0 0 0;
+    align-items: center;
+    align-content: center;
+    overflow-x: hidden;
+}
+    
+    .bloquefooter {
+        margin: 5% 0;
+        padding: 0 5%;
+    }
+    
+    .socialmedia {
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: normal;
+        flex: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    
+    .fa-brands {
+        padding-top: 25%;
+    }
+    
+    .button1 {
+        border: none;
+        background-color: #06403C;
+        width: 3rem;
+        height: 3rem;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        justify-content: space-between;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .foot-copy {
+        color: #06403C;
+        padding: 5% 0 0 0;
+        margin: 0;
+        list-style: none;
+    }    
+
+    .foot.links {
+        list-style: none;
+        padding: 0 !important;
+    }
+
+
+[class*="col-"] {
+    width: 100%;
+}
+
+/*talleres*/
+
+.talleres {
+    padding-top: 5%;
+}
+
+.titulo-seccion {
+    display: flex;
+    justify-content:  center;
+    font-size: 40px;
+    color:#d3aa2f;
+
+    .titulo-texto {
+        padding: 0 15px 0 15px;
+    }
+    
+}
+
+@charset "utf-8";
+
+.tarjetas-container {
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap: 16px;
+    padding: 60px;
+
+    .tarjeta {
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      width: 400px;
+      background-color: #5F9C7A;
+      padding:none;
+      margin-inline: 25px;
+      margin-bottom: 60px;
+      border: 1px solid lightgray;
+      box-shadow: 0px 0px 8px 4px #d3d3d3d1;
+      border-radius:10px;
+      font-family: sans-serif;
+      text-align: center;
+
+      img {
+        border: 3px solid;
+        border-color: #4A0404;
+      }
+    }
+
+    .titulo {
+        font-size: 24px;
+        padding: 10px 10px 0 10px;
+    }
+    .cuerpo {
+        padding: 10px;
+        flex: 1 1 100%;
+
+        img .roscon {
+            border-width: 10%;
+            border-color: #4A0404;
+        }
+
+        .descripcion {
+            margin: 5%,
+        }
+    }
+
+    .pie {
+        background:linear-gradient(to bottom right, #BA0B0B, #4A0404);
+        border-radius:0 0 10px 10px;
+        padding: 10px;
+        text-align:center; 
+    
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.novedad {
+    display: flex;    
+}
+
+.parpadear {
+    text-align: left;
+    padding: 10px 30px 0 10px;
+}
+.nuevo {  
+    color:#BA0B0B;
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+
+
+@media (min-width: 600px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+a:hover {
+    color: #00DBA8 !important;
+    cursor: url(images/raton.svg), auto !important;
+}
