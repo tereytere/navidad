@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&display=swap');
+
+@keyframes nieve{
+    from {top: 0%;}
+    to {top: 100%;}
+}
+       
+@keyframes copos{
+    0% { transform: rotate(-180deg) translate(0px, 0px);}
+    100% { transform: rotate(180deg) translate(10px, 75px);}
+}
+
+#snow div {
+    position: absolute;
+    animation-name: nieve, copos;
+    animation-direction: normal;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+	top: -40px;
+}
+    .copos {
+        color: #EAEAFF;
+        font-size: 1em;
+        position: absolute;   
+    }
+    .copos.f1 {
+        left: 5%;
+        animation-delay: -2s;   
+    }
+    .copos.f2 {
+        font-size: 1.8em;
+        left: 12%;
+        animation-delay: 2s;   
+    }
+    .copos.f3 {
+        left: 25%;
+        animation-delay: -8s;   
+    }
+    .copos.f4 {
+        font-size: 1.5em;
+        left: 32%;
+        animation-delay: -3s; 
+    }
+    .copos.f5 {
+        left: 18%;
+        animation-delay: -5s; 
+    }
+    .copos.f6 {
+        font-size: 1.8em;
+        left: 48%;
+    }
+    .copos.f7 {
+        left: 33%;
+        animation-delay: 1s;  
+    }
+    .copos.f8 {
+        font-size: 2em;
+        left: 55%;
+        animation-delay: 6s;   
+    }
+    .copos.f9 {
+        left: 40%;
+        animation-delay: -2s; 
+    }
+    .copos.f10 {
+        font-size: 1.8em;
+        left: 50%;
+        animation-delay: -3s;  
+    }
+    .copos.f11 {
+        left: 60%;
+        animation-delay: 4s;  
+    }
+    .copos.f12 {
+        font-size: 1.5em;
+        left: 75%;
+        animation-delay: -6s;   
+    }
+    .copos.f13 {
+        left: 80%;
+        animation-delay: 3s;   
+    }
+    .copos.f14 {
+        font-size: 1.8em;
+        left: 92%;
+        animation-delay: -7s;   
+    }
+    .copos.f15 {
+        left: 64%;
+    }
+    .copos.f16 {
+        font-size: 1.5em;
+        left: 88%;
+        animation-delay: 6s;   
+    }
+    .copos.f17 {
+        left: 53%;
+        animation-delay: 2s;   
+    }
+    .copos.f18 {
+        font-size: 2em;
+        left: 71%;
+        animation-delay: 7s;   
+    }
+    .copos.f19 {
+        left: 83%;
+        animation-delay: -1s;   
+    }
+    .copos.f20 {
+        font-size: 1.5em;
+        left: 95%;
+        animation-delay: 6s;   
+    }
+
+
+body {
+    font-family: 'Gayathri';
+    color: white;
+    margin: 0;
+    padding: 0;
+    --bs-nav-link-color: #4A0404;
+    --bs-link-color: #4A0404;
+    --bs-nav-link-hover-color: #00DBA8;
+    --bs-link-hover-color: #00DBA8;
+}
+
+main {
+    background-color: #06403C;
+    padding: 0;
+    margin: 0 !important;
+}
+
+nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.barra {
+    padding: 0;
+    margin: 0;
+    background: url(images/nieve-top.svg) repeat-x left top white;
+    min-height: 117px;
+    max-width: 100vw;
+}
+
+.barvis {
+    color: #BA0B0B !important;
+    align-items: flex-end;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.navli {
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+
+.contit {
+    margin: 0;
+    padding: 2% 1%;
+    text-align: center;
+}
+
+.conp {
+    margin: 0;
+    padding: 1%;
+}
+
+#contacto {
+    background-image: url("images/tree.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.escribenos {
+    text-align: center;
+    padding: 1%;
+}
+
+#contacto {
+    padding: 1% 3% !important;
+}
+
+.cuentanos {
+    --bs-gutter-x: 0 !important;
+    padding: 1%;
+}
+
+.form-label, .form-check-input, .form-check-label, .valid-feedback, .invalid-feedback {
+    padding: 1%;
+}
+
+.concbut {
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.conbot {
+    box-sizing: border-box;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    left: 10px;
+    top: 20px;
+    background: linear-gradient(97.75deg, #BA0B0B -100.68%, #4A0404 124.1%);
+    border: 1px solid #BA0B0B;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+footer {
+    background: url(images/nieve-bottom.svg) repeat-x left top white;
+    min-height: 117px;
+    justify-content: space-between;
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    padding: 5% 0 0 0;
+    align-items: center;
+    align-content: center;
+    overflow-x: hidden;
+}
+    
+    .bloquefooter {
+        margin: 5% 0;
+        padding: 0 5%;
+    }
+    
+    .socialmedia {
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: normal;
+        flex: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    
+    .fa-brands {
+        padding-top: 25%;
+    }
+    
+    .button1 {
+        border: none;
+        background-color: #06403C;
+        width: 3rem;
+        height: 3rem;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        justify-content: space-between;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .foot-copy {
+        color: #06403C;
+        padding: 5% 0 0 0;
+        margin: 0;
+        list-style: none;
+    }    
+
+    .foot.links {
+        list-style: none;
+        padding: 0 !important;
+    }
+
+
+@media (min-width: 600px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+a:hover {
+    color: #00DBA8 !important;
+    cursor: url(images/raton.svg), auto !important;
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: none;
+}
+
+html {
+    overflow-x: hidden !important;
+}
