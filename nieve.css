@@ -6,7 +6,7 @@
     background-size: cover;  
  }
  nav{ background: url(images/nieverepeat.png) repeat-x left top;
-    min-height: 300px;}
+    min-height: 500px;}
     nav ul li{ display: inline; text-decoration: none;}
 
 @-webkit-keyframes nieve{
@@ -28,7 +28,7 @@
  }
  .copos {
     color: #fff;
-    font-size: 1em;
+    font-size: 2em;
     position: absolute;   
  }
  .copos.f1 {
