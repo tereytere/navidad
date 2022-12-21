@@ -145,7 +145,7 @@ nav {
 .barra {
     padding: 0;
     margin: 0;
-    background: url(images/nieve-top.svg) repeat-x left top white;
+    background: url(images/nieve-top.svg) repeat-x left bottom white;
     min-height: 117px;
 }
 
@@ -165,11 +165,13 @@ nav {
 img {
     display: block;
     max-width: 90%;
-    margin: 10% 5%;
+    margin: 0% 5%;
+    padding: 10% 0%;
 }
 //ornamento 
 img.ornament {
-    margin: 3%;
+    margin: 0;
+    padding: 2%;
 }
 a.elige {
     margin: 5%;
@@ -280,6 +282,8 @@ ol.col3 {
 
 .cartas {
     border-radius: 50%;
+    padding: 0;
+    margin: 0;
 }
 
 .col-md-4 {
@@ -311,12 +315,18 @@ img.cartas {
     background: linear-gradient(to bottom right, rgb(122, 39, 39),#612114, rgb(75, 16, 12), rgb(54, 2, 2) );
     border: 1px solid #BA0B0B;
     font-size: 1em;
+    margin: 10%;
 
     &:hover {
         background: $color-hover;
         color: $color-letras;
         border: 0px;
         }
+}
+#cartas {
+    max-width: 96%;
+    align-items: center;
+    margin-left: 5%;
 }
 
 footer {
