@@ -1,1 +1,11 @@
-/*# sourceMappingURL=sass.css.map */
+.alert {
+  box-shadow: 0 0 1px rgba darkred, 0.25;
+  background-color: rgba darkred, 0.15;
+  color: darkred;
+}
+
+.success {
+  box-shadow: 0 0 1px rgba darkgreen, 0.25;
+  background-color: rgba darkgreen, 0.15;
+  color: darkgreen;
+}/*# sourceMappingURL=sass.css.map */

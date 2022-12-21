@@ -1,1 +1,14 @@
+$primary-color: green;
+@mixin theme($theme :$primary-color) {
+    box-shadow: 0 0 1px rgba ($theme, .25);
+    background-color: rgba ($theme, .15) ;
+    color: $theme;
+    
+}
+.alert{ 
+    @include theme( $theme: darkred);
+}
+.success{ 
+    @include theme( $theme: darkgreen);
+}
 
