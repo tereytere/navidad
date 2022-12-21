@@ -244,6 +244,10 @@ nav {
   padding: 1%;
 }
 
+#contacto {
+  padding: 1% 3% !important;
+}
+
 .cuentanos {
   --bs-gutter-x: 0 !important;
   padding: 1%;
