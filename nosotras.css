@@ -1,0 +1,210 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gayathri', sans-serif;
+}
+
+p, a {
+    font-family: 'Gayathri', sans-serif;
+}
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Gayathri', sans-serif;
+}
+
+a {
+ /* background-color: goldenrod;*/
+  text-decoration: none;
+  color: #BA0B0B;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+/* Styles for the hero image */
+.hero {
+  /* Photo by mnm.all on Unsplash */
+  background: url( images/7703navidad.jpg) center;
+  background-size: cover;
+  padding: 4rem 2rem;
+  /* grid styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+}
+
+.hero > * {
+  color: #BA0B0B;
+}
+
+.hero > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.hero > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.hero > article > a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+/* breweries styles */
+.breweries {
+  padding: 2rem;
+}
+
+.breweries > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.breweries > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+  background: #5F9C7A;
+  list-style: none;
+
+}
+
+.breweries > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.breweries > ul > li > figure > img {
+  width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.breweries > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #fff;
+}
+
+.breweries > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+  color: #BA0B0B;
+  font-weight: bold;
+  background-color: goldenrod;
+}
+#team{
+  display: grid;
+  
+  grid-gap: 50px;
+  
+}
+.miembroEquipo{
+  grid-column: 2;
+  grid-row: 4;
+}
+main{ background: #063E3A; color: aliceblue;}
+
+
+
+#team .col-lg-4{     color: #ffffff;
+  background-color: #8cb2b0;    
+  border-radius: 50px !important;}
+  #team .col-lg-4 img{ width: 180px;
+  height: 180px;
+  object-position: 50% 0%;
+  margin: -36px auto 0;}
+  .hero article{text-align: end;}
+  
+.equipoDv{  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 5rem; margin-top: 30px;}
+
+.teamMember{color: #ffffff;
+  background-color: #8cb2b0;    border-radius: 50px !important;display: grid;
+ 
+}
+
+  .teamMember img{    width: 180px;
+  height: 180px;
+  object-position: 50% 0%;
+  margin: -36px auto 0;border-radius: 34px !important;}
+ .teamMember h5, .teamMember h6{ text-align: center;}
+ /*tere*/
+ #container{      
+  background: #666 url( images/tree.png) no-repeat;
+  width: 100%;
+  height: 100%;      
+  position: relative; 
+  background-size: cover;  
+}
+nav{ background: url(images/nieverepeat.png) repeat-x left top;
+  min-height: 300px;}
+  nav ul li{ display: inline; text-decoration: none;}
+
+@-webkit-keyframes nieve{
+  from {top: -10px;}
+  to {top: 450px;}
+}
+     
+@-webkit-keyframes copos{
+   0% { -webkit-transform: rotate(-180deg) translate(0px, 0px);}
+   100% { -webkit-transform: rotate(180deg) translate(10px, 75px);}
+}
+#snow div {
+  position: absolute;
+  top: -40px;
+  -webkit-animation-name: nieve, copos;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: ease-in;
+}
+.copos {
+  color: #fff;
+  font-size: 1em;
+  position: absolute;   
+}
+.copos.f1 {
+  left: 40px;
+  -webkit-animation-duration: 5s;   
+}
+.copos.f2 {
+  font-size: 1.8em;
+  left: 120px;
+  -webkit-animation-duration: 7s;   
+}
+.copos.f3 {
+  left: 200px;
+  -webkit-animation-duration: 8s;   
+}
+.copos.f4 {
+  font-size: 1.5em;
+  left: 280px;
+  -webkit-animation-duration: 6s;   
+}
+#about{    padding: 1em 2em;}
+#team p{ font-size: 1.2em;}
