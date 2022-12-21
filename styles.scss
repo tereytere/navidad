@@ -2,11 +2,382 @@
 
 body {
     font-family: 'Gayathri';
-    color: #4A0404;
+    color: white;
+    background-color: #05322F;
 }
 
 main {
-    background-image: url(images/tree.png);
+    
+    background-color: #05322F;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap !important;
+}
+footer {
+    background: url(images/nieveBottom.png) repeat-x left top white;
+    min-height: 117px;
+    justify-content: space-between;
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    padding: 5% 0 0 0;
+    align-items: center;
+    align-content: center;
+    overflow-x: hidden;
+}
+    
+    .bloquefooter {
+        margin: 5% 0;
+        padding: 0 5%;
+    }
+    
+    .socialmedia {
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: normal;
+        flex: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    
+    .fa-brands {
+        padding-top: 25%;
+    }
+    
+    .button1 {
+        border: none;
+        background-color: #06403C;
+        width: 3rem;
+        height: 3rem;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        justify-content: space-between;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .foot-copy {
+        color: #06403C;
+        padding: 5% 0 0 0;
+        margin: 0;
+        list-style: none;
+    }    
+
+    .foot.links {
+        list-style: none;
+        padding: 0 !important;
+    }
+.barra {
+    padding: 0;
+    margin: 0;
+    background: url(images/nieveTop.png) repeat-x left top #05322F;
+    min-height: 120px;
+}
+
+.barvis {
+    color: #BA0B0B;
+    :hover {color: #00DBA8;}
+}
+
+.logo {
+    max-width: 100%;
+}
+
+
+
+/*-------------------------------- VISTA INICIO------------------------------------------ */
+h1 {
+    padding: 10px;
+
+}
+
+.bloque1 {
+    text-align: center;
+}
+
+.adorno {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.adorno1 {
+    padding: 6;
+    margin: 6;
+    margin-bottom: 20px;
+   
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+    display: block;
+    max-width: 90%;
+    margin: 10%;
+    }
+
+.imagencatas {
+        display: block;
+        max-width: 90%;
+    }
+
+.parrafo {
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+}
+
+.imagenprincipal {
+    display: block;
+    max-width: 90%;
+    margin: 10%;
+}
+
+
+.cajacarta {
+    border-radius: 20px;
+    border: 3px solid black;
+    background-color:#fa5f5f;
+    color: #000;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajacarta:hover{
+    color:#fff;
+    background-color:black;
+    border-color: #BA0B0B;;
+}
+.boton1 {
+
+    border-radius: 20px;
+    border: 3px solid black;
+    background-color:#fa5f5f;
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.boton1:hover {
+        color:#fff;
+        background-color:black;
+        border-color: #BA0B0B;;
+}
+
+a {
+    color: lawngreen;
+}
+
+a:hover {
+    color:#BA0B0B;
+}
+
+h2 {
+    margin: 3px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#columnas {
+    font-size: 30px;
+    list-style: none;
+    text-align: center;
+    margin: 20px auto auto;
+    padding: 10px;
+}
+
+
+.texto1 {
+    font-size: 12px;
+}
+
+h3 {
+    margin: 0;
+}
+
+h5 {
+    font-size: 30px;
+}
+.form-check-input:checked {
+    background-color: lawngreen;
+    border-color: #000;
+	color:#000;
+}
+.form-check-input:checked[type=checkbox] {
+    background-image: url('../pagina-web/imagenes/simbolo-correcto.png');
+	width: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    margin: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: rgb(248, 110, 110);
+    background-clip: padding-box;
+    border: 1px solid lawngreen;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	
+}
+.gif {
+    display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 8%;
+	margin-bottom: 60px;
+	   
+}
+
+.elfo {
+   
+    display: block;
+	max-width: 90%;
+    margin: 0% 40%;
+    padding: 0% 0%;
+    text-align: center;
+	
+}
+.elfo1 {
+    text-align: center;
+}
+
+
+.p.texto1 {
+    font-size: 10px;
+}
+
+.adorno{
+    justify-content: center;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+ 
+/*--------------------------------------COOKIES------------------------------------*/
+#cookie_action_close_header{
+    font-family: 'Gayathri';
+    color: #fff; 
+    background-color: #05322F;
+    border-color: black;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 5px;
+    max-width: 90%;
+}
+#cookie_action_close_header2{
+    font-family: 'Gayathri';
+    color: #fff; 
+    background-color: red;
+    border-color: black;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 5px;
+
+    max-width: 90%;
+}
+#cookie-law-info-bar {
+    text-align: center;
+    align-items: center;
+    background-color: #fff; 
+    color: black;
+    font-family: 'Gayathri'; 
+    bottom: 0px;
+    position: fixed;
+    display: block;
+    width: 98%; 
+}
+
+.galleta {
+    width: 30px;
+    height: 40px;
+    padding-top: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+/*----------------------------------------MEDIA------------------------------------------------*/
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+/*-----------------------------------versión ordenador-----------------------------------*/
+@media (min-width: 1200px) {
+
+body {
+    font-family: 'Gayathri';
+    color: white;
+    background-color: #05322F
+}
+
+main {
+    
+    background-color: #05322F;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -36,6 +407,144 @@ nav {
     max-width: 100%;
 }
 
+
+/*-------------------------------- VISTA INICIO------------------------------------------ */
+h1 {
+    padding: 10px;
+
+}
+
+.bloque1 {
+    text-align: center;
+}
+.adorno {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.parrafo {
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+
+    
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 5px;
+    }
+
+    /*.container-1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }*/
+
+.imagenprincipal {
+    display: flex;
+    
+}
+
+
+.cajacarta {
+    border-radius: 20px;
+    border: 3px solid black;
+    background-color:#fa5f5f;
+    color: #000;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajacarta:hover{
+    color:#fff;
+    background-color:black;
+    border-color: #BA0B0B;;
+}
+
+h2 {
+    margin: 3px;
+    padding-top: 20px;
+}
+
+.card-title {
+    color: #000;
+    font-style: italic;
+}
+
+.flaticon {
+    width: 50px;
+    margin-top: 30px;
+}
+
+.p.texto1 {
+    font-size: 10px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+ 
+/*--------------------------------------COOKIES------------------------------------*/
+#cookie_action_close_header{
+    font-family: 'Gayathri';
+    color: #fff; 
+    background-color: #05322F;
+    border-color: black;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 5px;
+}
+#cookie_action_close_header2{
+    font-family: 'Gayathri';
+    color: #fff; 
+    background-color: red;
+    border-color: black;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 5px;
+}
+#cookie-law-info-bar {
+    text-align: center;
+    align-items: center;
+    background-color: #fff; 
+    color: black;
+    font-family: 'Gayathri'; 
+    bottom: 0px;
+    position: fixed;
+    display: block;
+    width: 100%;
+    
+}
+
+.galleta {
+    width: 30px;
+    height: 40px;
+    padding-top: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+}
+/*----------------------------------------MEDIA------------------------------------------------*/
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex!important;
@@ -63,4 +572,49 @@ nav {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
+
+
+
+
+@media (min-width: 900px) {
+.imagencatas {
+    max-width: 90%;
+    min-height: 60%;
+}
+
+}
+@media (max-width: 600px) {
+    .imagencatas {
+        width: 100%;
+        height: 90%;
+        margin-left: 9%;
+    }
+}
+
+@media (min-width: 900px) {
+    div#columnas {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px auto auto;
+        padding: 30px;
+
+    }
+    
+
+}
+@media (max-width: 600px) {
+    div#columnas {
+        display: block;
+        
+        min-height: 60%;
+        margin: 20px auto auto;
+        padding: 10px
+    }
+    img.flaticon {
+        width: 50px;
+    }
+
 }
